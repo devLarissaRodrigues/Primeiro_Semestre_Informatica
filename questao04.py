@@ -18,13 +18,12 @@ else:
   
 # Retornar a posição da última ocorrência de um dado nome na lista. Se o nome não existir, deve-se retornar o valor -1 sinalizando posição inválida não encontrada
 
-# if nome not in clientes:
-#   indice = "-1"
-# else:
-#   indice = clientes[1]
-# print("indice=", indice)
+posicao = -1
+for i in range(len(clientes)):
+  if clientes[i] == nome:
+    posicao = i
 
-
+print(f"A posição de última ocorrência é {posicao}")
 # Remover todas as ocorrências do nome de entrada presente na lista
 
 contador = 0
