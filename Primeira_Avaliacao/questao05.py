@@ -18,5 +18,4 @@ elif media >= 50 and media <= 69:
 else:
   conceito = "D"
 
-
 print(f"{nome} obteve conceito {conceito}\nAs notas fornecidas como entrada foram: {nota1:.2f}, {nota2:.2f} e {nota3:.2f} com Média final: {media:.2f}")
