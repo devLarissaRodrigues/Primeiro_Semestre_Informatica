@@ -4,20 +4,13 @@ vogal = ['A','E','I','O','U']
 vog = []
 
 def obter_consoante():
-  for v in range(len(nome)):
-    if nome[v] in vogal:
-      vog.append(nome[v])
+  for indice in range(len(nome)):
+    if nome[indice] in vogal:
+      vog.append(nome[indice])
   consoante = len(nome) - len(vog)
   return consoante
-
-  
-def saida():
-  print(f"Sua entrada foi {nome}")
-  print(f"Vogais: {len(vog)} Letras")
-  print(f"Consoantes: {cons} Letras")
-
+ 
 nome = str(input("Digite seu nome: ")).upper()
-
 cons = obter_consoante()
-saida()
+print(f"\nNo nome {nome} há {len(vog)} vogais e {cons} consoantes")
 
